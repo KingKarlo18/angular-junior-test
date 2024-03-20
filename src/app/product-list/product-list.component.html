@@ -1,6 +1,4 @@
-
-<div>
-    <div>Modify me to show all products</div> 
-    <h2>{{ products[0].name }}</h2>
-    <p>Price: {{ products[0].price }}</p>
+<div *ngFor="let poductItem of products">
+  <h2>{{ poductItem.name }}</h2>
+  <p>Price: {{ poductItem.price }}</p>
 </div>
